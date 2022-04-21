@@ -1,0 +1,158 @@
+.container {
+  padding: 0;
+}
+
+.main__content {
+  background: #FFFFFF url('../images/bg.svg') no-repeat center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 150px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 18px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.nav__links li a:hover {
+  color: #3E82FC;
+}
+
+.main__wrapper {
+  display: grid;
+  padding: 0 150px;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas: "box-side box-image"
+  "popup-wrapper popup-wrapper"
+  "main-footer main-footer";
+}
+
+.box__side {
+  padding: 100px 0;
+  grid-area: box-side;
+}
+
+.box__side h1 {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.box__side p {
+  font-size: 16px;
+  font-weight: 300;
+  margin: auto auto 50px auto;
+}
+
+.box__side__cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.box__side__cta button {
+  padding: 10px 20px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: #3E82FC;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  filter: drop-shadow(0px 0px 15px rgba(62, 130, 252, 0.5));
+  transition: all 0.3s ease 0s;
+}
+
+.box__side__cta button:hover {
+  transform: scale(0.95);
+  filter: drop-shadow(0px 0px 10px rgba(62, 130, 252, 0.5));
+}
+
+.outline__button {
+  background-color: transparent !important;
+  border: solid !important;
+  border-color: #3E82FC !important;
+  border-width: 1px !important;
+  color: #3E82FC !important;
+}
+
+.box__image {
+  padding: 100px 0 0 50px;
+  grid-area: box-image;
+}
+
+.popup__wrapper {
+  grid-area: popup-wrapper;
+  display: flex;
+  padding: 50px 0;
+  justify-content: center;
+}
+
+.popup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #FFFFFF;
+  filter: drop-shadow(0px 0px 15px rgba(5, 6, 10, 0.1));
+}
+
+.popup div {
+  margin: 0 40px;
+}
+
+.popup div h1 {
+  font-size: 18px;
+}
+
+.popup div p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.popup a {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FE2C54;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.popup a:hover {
+  border-color: #FE2C54;
+}
+
+.main__footer {
+  grid-area: main-footer;
+  display: flex;
+  justify-content: center;
+}
+
+.main__footer p {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.main__footer p strong {
+  color: #FE2C54;
+  font-style: italic;
+  padding: 0 0 50px 0;
+}
