@@ -2,7 +2,15 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import logo from '../images/logo.svg'
+
 import hikingCouple from '../images/hiking-couple-img.png'
+import girl from '../images/girl.png'
+
+import booking from '../images/booking.png'
+import unitedTravel from '../images/united-travel.png'
+import travelAdvisor from '../images/travel-advisor.png'
+import travelChannel from '../images/travel-channel.png'
+import tripraja from '../images/triprajacom.png'
 
 import pinIcon from '../images/pin-icon.svg'
 import bootIcon from '../images/boot-icon.svg'
@@ -68,10 +76,39 @@ export default function Home() {
           </div>
         </main>
       </div>
-      <section id="safety">
-        
+      <section className={styles.safety__wrapper}>
+        <div className={styles.sidebox__left}>
+          <Image src={girl} />
+        </div>
+        <div className={styles.sidebox__right}>
+          <h1>Safe, Affordable, And Trusted</h1>
+          <p>Volunteer trail stewardship projects in America’s parks and forests designed specifically for college student groups and young professionals.</p>
+          <button className={styles.primary__button}>Contact Us</button>
+        </div>
+        <div className={styles.trust__wrapper}>
+          <h5>Safe Journey</h5>
+          <h2>Trusted by Big Companies</h2>
+          <div className={styles.business__wrapper}>
+            <div className={styles.business__img_1}>
+              <Image src={travelAdvisor} />
+            </div>
+            <div className={styles.business__img_2}>
+              <Image src={unitedTravel} />
+            </div>
+            <div className={styles.business__img_3}>
+              <Image src={travelChannel} />
+            </div>
+            <div className={styles.business__bottom}>
+              <div>
+                <Image src={tripraja} />
+              </div>
+              <div>
+                <Image src={booking} />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="reviews"></section>
       <footer></footer>
     </div>
   )
